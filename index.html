@@ -5,11 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holiday Traditions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+            top: 3rem;
+            position: relative;
+            font-family: 'Cabin Sketch', cursive;
+            font-size: 3rem;
+            color: #110c6c;
+
+        }
+
         .card {
-            width: 200px;
-            height: 250px;
-            margin: 1rem auto;
+            width: 300px;
+            height: 350px;
+            margin: 9rem auto;
             perspective: 1000px;
             cursor: pointer;
         }
@@ -51,26 +69,62 @@
         }
 
         .card-back {
-            background: #8b5cf6;
+            background: #bf3030;
             color: white;
             transform: rotateY(180deg);
+            font-family: 'Nunito', sans-serif;
+            font-size: 27px;
+            padding: 20px;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
     </style>
 </head>
 
 <body>
-    <h1>New Year's Traditions</h1>
+    <h1>New Year's Eve Traditions</h1>
 
-    <div class="card">
-    <div class="card-inner">
-        <div class="card-front">
-            <img src="images/grapes.jpg" alt="Twelve grapes">
+    <div class="cards-container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="images/grapes.jpg" alt="Twelve grapes">
+                </div>
+                <div class="card-back">
+                    Eating twelve grapes for each month for good luck
+                </div>
+            </div>
         </div>
-        <div class="card-back">
-            Eating twelve grapes for each month for good luck
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="images/monigote.jpg" alt="Twelve grapes">
+                </div>
+                <div class="card-back">
+                    Burn año viejo (old year) dolls stuffed with paper to leave behind the bad things from the past year
+                    and welcome a fresh start.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="images/lentils.jpg" alt="Twelve grapes">
+                </div>
+                <div class="card-back">
+                    Eating lentils to attract prosperity and good fortune for the new year.
+                </div>
+            </div>
         </div>
     </div>
-</div>
+
     <script>
         // Your javascript code (optional)
     </script>
